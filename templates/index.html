@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Option Chain Snapshot Analyser</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Option Chain Snapshot Analyser</h1>
+
+    <p>Analyse NIFTY Option Chain Data</p>
+
+    <div class="card">
+
+        <h2>Upload Option Chain</h2>
+
+        <form action="/analyze"
+      method="POST"
+      enctype="multipart/form-data">
+
+    <label>Symbol:</label>
+
+    <br>
+
+    <input type="text"
+           name="symbol"
+           value="NIFTY"
+           required>
+
+    <br><br>
+
+    <label>Expiry:</label>
+
+    <br>
+
+    <input type="date"
+           name="expiry">
+
+    <br><br>
+
+    <label>Upload CSV:</label>
+
+    <br>
+
+    <input type="file"
+           name="file"
+           accept=".csv"
+           required>
+
+    <br><br>
+
+    <button type="submit">
+        Analyse Option Chain
+    </button>
+
+</form>
+    </div>
+
+</div>
+
+</body>
+
+</html>
