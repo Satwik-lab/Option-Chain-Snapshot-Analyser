@@ -34,4 +34,4 @@ def analyze():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=Trgithttps://github.com/Satwik-lab/Option-Chain-Snapshot-Analyser.git
